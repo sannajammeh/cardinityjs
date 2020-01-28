@@ -59,7 +59,7 @@ class Cardinity {
             },
         };
 
-        return this.send(requestObject);
+        return await this.send(requestObject);
     }
 
     async finalize({ authorize_data, id }) {
@@ -70,7 +70,7 @@ class Cardinity {
                 authorize_data,
             },
         };
-        return this.send(requestObject);
+        return await this.send(requestObject);
     }
 
     async getPayments(id = '') {
@@ -78,7 +78,7 @@ class Cardinity {
             url: `${this.baseURL}/payments/${id}`,
             method: 'GET',
         };
-        return this.send(requestData);
+        return await this.send(requestData);
     }
 
     async send(data) {
@@ -87,7 +87,7 @@ class Cardinity {
             method: data.method,
         };
 
-        return axios({
+        return await axios({
             ...data,
             headers: this.createHeader(requestData),
         });
