@@ -1,5 +1,5 @@
 {
-    "name": "cardinityjs",
+    "name": "cardinityjsnode",
     "version": "1.0.0",
     "description": "API wrapper for the Cardinity Payments API",
     "main": "index.js",
@@ -17,6 +17,6 @@
         "url": "git+https://github.com/ChiefKoshi/cardinityjs"
     },
     "bugs": {
-      "url": "https://github.com/ChiefKoshi/cardinityjs/issues"
+        "url": "https://github.com/ChiefKoshi/cardinityjs/issues"
     }
 }
