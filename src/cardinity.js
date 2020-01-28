@@ -18,7 +18,7 @@ class Cardinity {
         this.baseURL = 'https://api.cardinity.com/v1';
     }
 
-    createHeader(data) {
+    createHeaders(data) {
         //Init OAuth
         const oauth = OAuth({
             consumer: {
@@ -89,7 +89,7 @@ class Cardinity {
 
         return await axios({
             ...data,
-            headers: this.createHeader(requestData),
+            headers: this.createHeaders(requestData),
         });
     }
 }
