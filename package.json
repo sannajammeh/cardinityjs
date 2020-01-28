@@ -1,0 +1,15 @@
+{
+    "name": "cardinityjs",
+    "version": "1.0.0",
+    "description": "API wrapper for the Cardinity Payments API",
+    "main": "index.js",
+    "keywords": [
+        "Cardinity"
+    ],
+    "author": "Sanna Jammeh",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "oauth-1.0a": "^2.2.6"
+    }
+}
