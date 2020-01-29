@@ -1,6 +1,6 @@
 {
     "name": "cardinityjsnode",
-    "version": "1.0.1",
+    "version": "1.0.4",
     "description": "API wrapper for the Cardinity Payments API",
     "main": "index.js",
     "keywords": [

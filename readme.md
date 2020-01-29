@@ -11,7 +11,7 @@ This is a NodeJS client library wrapper for [Cardinity's](https://developers.car
 ### Create new payment
 
 ```javascript
-const Cardinity = require('cardinityjsnode);
+const Cardinity = require('cardinityjsnode');
 const client = new Cardinity('consumerKey', 'secretKey');
 
 const payment = {
@@ -40,14 +40,15 @@ Field payment_method is not required as 'card' is default value. For a recurring
 ### Get existing payment('s)
 
 ```javascript
-const Cardinity = require('cardinityjsnode);
-const client = new Cardinity('consumerKey',  'secretKey');
+const Cardinity = require('cardinityjsnode');
+const client = new Cardinity('consumerKey', 'secretKey');
 
-client.getPayments("{UUID}").then(response => {
-	//Handle response
-}).catch(error => {
-	//Handle error
-});
+client
+    .getPayments('{UUID}').then(response => {
+        //Handle response
+    }).catch(error => {
+        //Handle error
+    });
 ```
 
 Method getPayments() can be called without arguments and will return all payments based on the default limit of Cardinity's API.
