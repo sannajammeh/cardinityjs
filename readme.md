@@ -58,7 +58,7 @@ Method getPayments() can be called without arguments and will return all payment
 -   `getPayments(id)` Returns all payments or single payment if ID is included. Returns error object upon error.
 -   `finalize({authorize_data, id})` | Returns a payment object upon successful 3D Secure finalization. Returns error object upon error. Can also return payment error object upon 3D Secure denial.
 
-All responses are raw (json parsed by axios) from the Cardinity API, no data is altered.
+All responses are raw (json parsed by axios) from the Cardinity API, no data is changed.
 
 ## API Docmumentation
 
