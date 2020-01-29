@@ -18,7 +18,7 @@ const payment = {
 	amount:  '140.00',
 	currency:  'USD',
 	country:  'US',
-	payment_method: 'card' //Not required ('card' is default).
+	payment_method: 'card', //Not required ('card' is default).
  	payment_instrument: {
 		pan:  '4111111111111111',
 		exp_month:  '01',
@@ -43,12 +43,11 @@ Field payment_method is not required as 'card' is default value. For a recurring
 const Cardinity = require('cardinityjsnode');
 const client = new Cardinity('consumerKey', 'secretKey');
 
-client
-    .getPayments('{UUID}').then(response => {
-        //Handle response
-    }).catch(error => {
-        //Handle error
-    });
+client.getPayments('{UUID}').then(response => {
+    //Handle response
+}).catch(error => {
+    //Handle error
+});
 ```
 
 Method getPayments() can be called without arguments and will return all payments based on the default limit of Cardinity's API.
