@@ -9,7 +9,7 @@
     "author": "Sanna Jammeh",
     "license": "MIT",
     "dependencies": {
-        "axios": "^0.21.1",
+        "axios": "^1.6.0",
         "oauth-1.0a": "^2.2.6"
     },
     "repository": {
